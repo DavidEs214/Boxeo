@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Untitled Document</title>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+<style type="text/css">
+<!--
+body {
+	background-color: #000000;
+}
+-->
+</style></head>
+
+<body>
+<div id="Layer1" style="position:absolute; left:442px; top:10px; width:431px; height:71px; z-index:1">
+  <div align="center"><h2>
+<script language="JavaScript1.2">
+
+/*
+Neon Lights Text
+By JavaScript Kit (http://javascriptkit.com)
+Over 400+ free scripts here!
+*/
+
+var message="MUSICA"
+var neonbasecolor="gray"
+var neontextcolor="yellow"
+var flashspeed=100  //in milliseconds
+
+///No need to edit below this line/////
+
+var n=0
+if (document.all||document.getElementById){
+document.write('')
+for (m=0;m<message.length;m++)
+document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+document.write('')
+}
+else
+document.write(message)
+
+function crossref(number){
+var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+return crossobj
+}
+
+function neon(){
+
+//Change all letters to base color
+if (n==0){
+for (m=0;m<message.length;m++)
+//eval("document.all.neonlight"+m).style.color=neonbasecolor
+crossref(m).style.color=neonbasecolor
+}
+
+//cycle through and change individual letters to neon color
+crossref(n).style.color=neontextcolor
+
+if (n<message.length-1)
+n++
+else{
+n=0
+clearInterval(flashing)
+setTimeout("beginneon()",1500)
+return
+}
+}
+
+function beginneon(){
+if (document.all||document.getElementById)
+flashing=setInterval("neon()",flashspeed)
+}
+beginneon()
+
+
+</script>
+</h2>
+
+<p align="center"><br />
+<a href="http://javascriptkit.com"></a></p></div>
+</div>
+<div id="Layer2" style="position:absolute; left:20px; top:33px; width:215px; height:92px; z-index:2">
+  <embed src="y2mate.com%20-%20John%20Cafferty%20%20Hearts%20On%20Fire%20Rocky%20IV.mp3" width="214" height="90"></embed>
+</div>
+<div id="Layer3" style="position:absolute; left:238px; top:142px; width:212px; height:108px; z-index:3">
+  <embed src="y2mate.com%20-%20Eye%20of%20the%20Tiger.mp3" width="213" height="104"></embed>
+</div>
+<div id="Layer4" style="position:absolute; left:13px; top:148px; width:218px; height:113px; z-index:4">
+  <embed src="y2mate.com%20-%20Runnin%20feat%20AAP%20Rocky%20%20Creed%20II%20OST.mp3" width="216" height="109"></embed>
+</div>
+<div id="Layer5" style="position:absolute; left:530px; top:117px; width:291px; height:238px; z-index:5"><img src="box%205.jpg" width="305" height="241"></div>
+<div id="Layer6" style="position:absolute; left:855px; top:117px; width:266px; height:244px; z-index:6"><img src="box%206.jpg" width="262" height="233"></div>
+</body>
+</html>

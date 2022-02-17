@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Untitled Document</title>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+<style type="text/css">
+<!--
+body {
+	background-color: #000000;
+}
+.style1 {color: #FFFFFF}
+-->
+</style></head>
+
+<body>
+<div id="Layer1" style="position:absolute; left:489px; top:4px; width:445px; height:60px; z-index:1">
+  <div align="center"><h2>
+<script language="JavaScript1.2">
+
+/*
+Neon Lights Text
+By JavaScript Kit (http://javascriptkit.com)
+Over 400+ free scripts here!
+*/
+
+var message="ENTRENAMIENTO PARA PRINCIPIANTES"
+var neonbasecolor="green"
+var neontextcolor="yellow"
+var flashspeed=100  //in milliseconds
+
+///No need to edit below this line/////
+
+var n=0
+if (document.all||document.getElementById){
+document.write('')
+for (m=0;m<message.length;m++)
+document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+document.write('')
+}
+else
+document.write(message)
+
+function crossref(number){
+var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+return crossobj
+}
+
+function neon(){
+
+//Change all letters to base color
+if (n==0){
+for (m=0;m<message.length;m++)
+//eval("document.all.neonlight"+m).style.color=neonbasecolor
+crossref(m).style.color=neonbasecolor
+}
+
+//cycle through and change individual letters to neon color
+crossref(n).style.color=neontextcolor
+
+if (n<message.length-1)
+n++
+else{
+n=0
+clearInterval(flashing)
+setTimeout("beginneon()",1500)
+return
+}
+}
+
+function beginneon(){
+if (document.all||document.getElementById)
+flashing=setInterval("neon()",flashspeed)
+}
+beginneon()
+
+
+</script>
+</h2>
+
+<p align="center"><br />
+<a href="http://javascriptkit.com"></a></p></div>
+</div>
+<div id="Layer2" style="position:absolute; left:12px; top:79px; width:493px; height:308px; z-index:2">
+  <p class="style1">Primero antes de cualquier cosa debes entender qu el boxeo es un deporte que pide disciplina y sobre todo ser constante.</p>
+  <p class="style1">Lo primero en el entrenamiento es el calentar, suele ser el calentamiento de las articulaciones e intervalos de saltar con la cuerda, asi tambien puede ser el trotar.</p>
+  <p class="style1">Lo segundo si eres novato deberas saber tecnica: los golpes principales, es jab,cruzado,upper y el famoso gancho o volado.</p>
+  <p class="style1">La defensa es muy importante ya que con ella evitaremos las lesiones.</p>
+  <p class="style1">El hacer sombra y el golpear el costal es muy importante en el arte del boxeo ya que mejoramos la tecnica a la hora de soltar los golpes.</p>
+  <p class="style1">Para finalizar debemos estirar y respirar, esto ayudara a evitar dolores al siguiente dia. </p>
+</div>
+<div id="Layer3" style="position:absolute; left:588px; top:99px; width:379px; height:239px; z-index:3"><img src="bos.jpg" width="380" height="240"></div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>
